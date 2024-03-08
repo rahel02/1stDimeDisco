@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1st Dime Disco</title>
+    <link rel="stylesheet" href="https://use.typekit.net/cih0hvl.css">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            display: flex;
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            flex-direction: column;
+            background-color: #F27D70;
+        }
+        .top-left, .top-right, .bottom-left, .bottom-right {
+            position: absolute;
+            cursor: pointer;
+            font-family: "Apfel Grotezk", sans-serif;
+            font-size: 36px;
+            color: #7F83AA;
+        }
+        .top-left {
+            top: 10px;
+            left: 10px;
+        }
+        .top-right {
+            top: 10px;
+            right: 10px;
+        }
+        .bottom-left {
+            bottom: 10px;
+            left: 10px;
+        }
+        .bottom-right {
+            bottom: 10px;
+            right: 10px;
+        }
+        
+        #ball {
+            width: 500px;
+            margin-bottom: 0,2px; 
+            height: inherit;
+            
+        }
+        
+        .DD {
+            font-family: "eight", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 40px;
+            color: #662F90;
+            color: rgb(102, 47, 144);
+            text-outline: #231F20;
+            text-outline: rgb(35, 31, 32);
+            display: flex; /* Use flexbox for aligning items */
+            flex-direction: column; /* Stack elements vertically */
+            align-items: center; /* Center horizontally */
+        }
+        .reflected-text {
+            transform: scaleY(-1); /* Reflect text vertically */
+        }
+    </style>
+</head>
+<body>
+    <div class="top-left">29.03.2024</div>
+    <div class="top-right" onclick="window.open('https://www.example.com/top-right')">Line UP</div>
+    <div class="bottom-left" onclick="window.open('https://www.example.com/bottom-left')">Location</div>
+    <div class="bottom-right" onclick="window.open('https://www.example.com/bottom-right')">Tickets</div>
+
+    <center>
+        <img src="ball2.png" alt="Ball" id="ball">
+    </center>
+    
+  
+</body>
+</html>
