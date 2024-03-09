@@ -5,15 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>1st Dime Disco</title>
     <link rel="stylesheet" href="https://use.typekit.net/cih0hvl.css">
-    
-    <link rel="shortcut icon" type="image/gif" href="ball.png">
-    
-    
 
     <style>
         body {
             margin: 0;
             padding: 0;
+            font-family: Arial, sans-serif;
             height: 100vh;
             display: flex;
             justify-content: center; /* Center horizontally */
@@ -28,75 +25,61 @@
             font-size: 36px;
             color: #7F83AA;
         }
-        .top-left {
+          .top-left {
             top: 10px;
             left: 10px;
         }
+        
+        .top-left a{color: #7F83AA;}
+        
         .top-right {
             top: 10px;
             right: 10px;
         }
+        
+        .top-right a {color: #7F83AA;
+        }
+        
         .bottom-left {
             bottom: 10px;
             left: 10px;
         }
+        
+        
+        .bottom-left a{color: #7F83AA;}
+        
         .bottom-right {
             bottom: 10px;
             right: 10px;
         }
         
-        #ball {
-            width: 100%; /* Adjusted width to fill the screen */
-            height: auto;
-            max-width: 500px; /* Set maximum width */
-            margin-bottom: 10px; 
+        .bottom-right a{color: #7F83AA;
+            
         }
         
-        .DD {
-            font-family: "eight", sans-serif;
-            font-weight: 400;
-            font-style: normal;
-            font-size: 40px;
-            color: #662F90;
-            color: rgb(102, 47, 144);
-            text-outline: #231F20;
-            text-outline: rgb(35, 31, 32);
-            display: flex; /* Use flexbox for aligning items */
-            flex-direction: column; /* Stack elements vertically */
-            align-items: center; /* Center horizontally */
+        #ball {
+            width: 500px;
+            margin-bottom: 0,2px; 
+            height: inherit;
+            
         }
+        
+    
         .reflected-text {
             transform: scaleY(-1); /* Reflect text vertically */
-        }
-
-        /* Responsive adjustments */
-        @media only screen and (max-width: 600px) {
-            .top-left, .top-right, .bottom-left, .bottom-right {
-                font-size: 24px; /* Decrease font size for smaller screens */
-            }
-            .DD {
-                font-size: 28px; /* Decrease font size for smaller screens */
-            }
         }
     </style>
 </head>
 <body>
     <div class="top-left">29.03.2024</div>
-    <div class="top-right" > <a href="location.html">Location</a></div>
-    <div class="bottom-left">
-        <a href="Lineup.html">Lineup</a> <!-- Corrected the placement of the anchor tag -->
-    </div>
-    <div class="bottom-right">
-        <a href="Tickets.html">Tickets</a>
-    </div>
+    <div class="top-right"><a href="Lineup.html">Line Up</a></div>
+    <div class="bottom-left"><a href="location.html">Location</a></div>
+    <div class="bottom-right"><a href="Tickets.html">Tickets</a></div>
 
     <center>
         <img src="ball2.png" alt="Ball" id="ball">
     </center>
     
-    <div class="DD">
-        <h1 style="margin-bottom: 0;">Dime</h1>
-        <h1 style="margin-top: 0;"><span class="reflected-text">Disco</span></h1>
-    </div>
+  
 </body>
 </html>
