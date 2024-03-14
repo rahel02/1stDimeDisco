@@ -12,62 +12,62 @@
             padding: 0;
             font-family: Arial, sans-serif;
             height: 100vh;
-            display: flex;
-            justify-content: center; /* Center horizontally */
-            align-items: center; /* Center vertically */
-            flex-direction: column;
             background-color: #F27D70;
-        }
-        .top-left, .top-right, .bottom-left, .bottom-right {
-            position: absolute;
-            cursor: pointer;
-            font-family: "Apfel Grotezk", sans-serif;
-            font-size: 36px;
-            color: #7F83AA;
-        }
-          .top-left {
-            top: 10px;
-            left: 10px;
-        }
-        
-        .top-left a{color: #7F83AA;}
-        
-        .top-right {
-            top: 10px;
-            right: 10px;
-        }
-        
-        .top-right a {color: #7F83AA;
-        }
-        
-        .bottom-left {
-            bottom: 10px;
-            left: 10px;
-        }
-        
-        
-        .bottom-left a{color: #7F83AA;}
-        
-        .bottom-right {
-            bottom: 10px;
-            right: 10px;
-        }
-        
-        .bottom-right a{color: #7F83AA;
-            
-        }
-        
-        #ball {
-            max-width: 100%; 
-            height: auto; 
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Center vertically */
+            align-items: center; /* Center horizontally */
         }
 
-            
+        .top-left, .top-right, .bottom-left, .bottom-right {
+            cursor: pointer;
+            font-family: "Apfel Grotezk", sans-serif;
+            font-size: 20px; /* Default font size */
+            color: #7F83AA;
+            margin: 5px; /* Add margin for spacing */
         }
-        
-    
-        .reflected-text {
-            transform: scaleY(-1); /* Reflect text vertically */
+
+        #ball {
+            max-width: 100%; /* Ensure image doesn't overflow container */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        /* Adjust position of date and links */
+        .top-left {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+
+        .top-right {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+
+        .bottom-left {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+        }
+
+        .bottom-right {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+        }
+
+        /* Adjust anchor tag color */
+        a {
+            color: #7F83AA;
+            text-decoration: none; /* Remove underline */
+        }
+
+        /* Media query for smaller screens (phones) */
+        @media only screen and (max-width: 768px) {
+            .top-left, .top-right, .bottom-left, .bottom-right {
+                font-size: 16px; /* Reduce font size for smaller screens */
+            }
         }
     </style>
 </head>
@@ -77,10 +77,6 @@
     <div class="bottom-left"><a href="location.html">Location</a></div>
     <div class="bottom-right"><a href="Tickets.html">Tickets</a></div>
 
-    <center>
-        <img src="ball2.png" alt="Ball" id="ball">
-    </center>
-    
-  
+    <img src="ball2.png" alt="Ball" id="ball">
 </body>
 </html>
