@@ -1,61 +1,53 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>location</title>
     <link rel="stylesheet" href="https://use.typekit.net/cih0hvl.css">
-    
     <link rel="shortcut icon" type="image/gif" href="ball.png">
-    
-    </head>
-    
-    <body>
-        
-        <h1 class="loc"> <center> 
-        
-        <p>BAR 131 </p>
-           
-           <p>Chausseestrasse 131a, 10115 Berlin</p>
-                    
-                    <p>U6
-
-Oranienburger Tor </p>
- 
-          
-         </center>
-   
-<div class="secret-location">
-
-
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d204.8524555947245!2d13.386152090565984!3d52.527469107533214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a851ebdc69f58f%3A0x7c0321730c99c64b!2s131%20BAR!5e0!3m2!1sde!2sde!4v1703589685326!5m2!1sde!2sde" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</head>
+<body>
+    <div class="container">
+        <h1 class="loc">BAR 131</h1>
+        <p>Chausseestrasse 131a, 10115 Berlin</p>
+        <p>U6 Oranienburger Tor</p>
     </div>
-                  
-                
-    
-    
-    </body>
-    
-    <style>
-      body {
-            margin: 0;
-            padding: 0;
-            height: 100vh;
-            display: flex;
-            justify-content: center; /* Center horizontally */
-            align-items: center; /* Center vertically */
-            flex-direction: column;
-            background-color: #F27D70;
-           font-family: "eight", sans-serif;
-            font-weight: 400;
-            font-style: normal;
-            font-size: 40px;
-            color: #662F90;
-            color: rgb(102, 47, 144);
-            text-outline: #231F20;
-            text-outline: rgb(35, 31, 32);
-            display: flex; /* Use flexbox for aligning items */
-            flex-direction: column; /* Stack elements vertically */
-            align-items: center; /* Center horizontally */
+    <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d204.8524555947245!2d13.386152090565984!3d52.527469107533214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a851ebdc69f58f%3A0x7c0321730c99c64b!2s131%20BAR!5e0!3m2!1sde!2sde!4v1703589685326!5m2!1sde!2sde" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</body>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: "eight", sans-serif;
+        background-color: #F27D70;
+        color: #662F90;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .container {
+        text-align: center;
+    }
+
+    .map-container {
+        width: 100%;
+        max-width: 800px; /* Adjust max width as needed */
+        margin-top: 20px; /* Add some spacing */
+    }
+
+    .loc {
+        font-size: 40px;
+    }
+
+    @media only screen and (max-width: 768px) {
+        .loc {
+            font-size: 30px; /* Decrease font size for smaller screens */
         }
-    
-    </style>
+    }
+</style>
+</html>
